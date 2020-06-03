@@ -116,7 +116,7 @@ stages:
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               authenticationType: 'server'
-              serverName: 'tailspin-space-game-rg.database.windows.net'
+              serverName: '$(servername)'
               databaseName: '$(databasename)'
               sqlUsername: '$(adminlogin)'
               sqlPassword: '$(adminPassword)'
@@ -190,7 +190,7 @@ stages:
             inputs:
               azureSubscription: 'Resource Manager - Tailspin - Space Game'
               authenticationType: 'server'
-              serverName: 'tailspin-space-game-rg.database.windows.net'
+              serverName: '$(servername)'
               databaseName: '$(databasename)'
               sqlUsername: '$(adminlogin)'
               sqlPassword: '$(adminPassword)'
